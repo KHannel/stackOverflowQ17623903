@@ -47,8 +47,8 @@ class DemoController extends Controller
 
             /**
              * handleRequest() will bind the form data to the $userData object using the naming convention
-             * (ie handleRequest() will call setNote on the field named 'note' on the Entity that we passed to
-             * createFormBuilder() and setName(), setTime(), etc.
+             * (ie handleRequest() will call setNote on the field named 'note' (and setName(), setTime(), etc.)
+             * on the Entity that we passed to createFormBuilder()
              */
             $completedForm->handleRequest($request);
 
