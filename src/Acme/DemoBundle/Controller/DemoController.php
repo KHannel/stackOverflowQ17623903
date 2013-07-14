@@ -46,7 +46,7 @@ class DemoController extends Controller
             $completedForm = $baseForm->getForm();
 
             /**
-             * handleRequest() will bind the underlying data to the $userData object using the naming convention
+             * handleRequest() will bind the form data to the $userData object using the naming convention
              * (ie handleRequest() will call setNote on the field named 'note' on the Entity that we passed to
              * createFormBuilder() and setName(), setTime(), etc.
              */
