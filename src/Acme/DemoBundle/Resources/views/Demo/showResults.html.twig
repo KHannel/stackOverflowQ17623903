@@ -1,0 +1,20 @@
+{% extends 'AcmeDemoBundle::layout.html.twig' %}
+
+{% block content %}
+    <p>Saved the following information:</p>
+
+    <table>
+        <tr>
+            <td style="width: 55px;">Name:</td>
+            <td>{{ savedData.name }}</td>
+        </tr>
+        <tr>
+            <td>Note:</td>
+            <td>{{ savedData.note }}</td>
+        </tr>
+        <tr>
+            <td>Time:</td>
+            <td>{{ savedData.time|date('d-m-Y g:i') }}</td>
+        </tr>
+    </table>
+{% endblock content %}

@@ -1,0 +1,11 @@
+{% extends 'AcmeDemoBundle::layout.html.twig' %}
+
+{% block content %}
+    <form method="post" action="{{ path(actionRoute) }}">
+        {{ form_rest(form) }}
+        {{ form_errors(form) }}
+
+        <div style="clear: both;"></div>
+        <input type="submit" value="Submit" />
+    </form>
+{% endblock content %}
